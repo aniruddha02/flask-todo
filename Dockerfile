@@ -19,6 +19,4 @@ ADD . /app
 
 EXPOSE 5000
 
-RUN chmod +x /app/entrypoint
-
-ENTRYPOINT ["/app/entrypoint"]
+CMD ["flask", "run", "--host=0.0.0.0"]
